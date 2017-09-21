@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tvSearch"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_gray_1stroke"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="请输入商品名关键词"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="12dp"
+            android:singleLine="true"
+            android:textSize="12sp"/>
+
+        <com.midian.base.widget.pulltorefresh.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+    </LinearLayout>
+</LinearLayout>

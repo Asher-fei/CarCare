@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3f3f3"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="已选商品列表"
+                android:textColor="#333"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.midian.base.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/pullToRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnAddGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加商品"
+            android:textColor="#FF5400"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/bg_1stroke_orange"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="下单"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="#FF5400"/>
+</LinearLayout>

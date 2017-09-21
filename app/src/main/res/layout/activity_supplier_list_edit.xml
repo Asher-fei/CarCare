@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="*"
+            android:textColor="#FF5C33"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="供  应  商"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etSupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/bg_gray_1stroke"
+            android:gravity="center|left"
+            android:hint="请输入供应商"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="*"
+            android:textColor="#FF5C33"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="联  系  人"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/bg_gray_1stroke"
+            android:gravity="center|left"
+            android:hint="请输入联系人"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="*"
+            android:textColor="#FF5C33"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="手  机  号"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/bg_gray_1stroke"
+            android:gravity="center|left"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="*"
+            android:textColor="#FF5C33"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="银行卡号"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etBankCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/bg_gray_1stroke"
+            android:gravity="center|left"
+            android:hint="请输入银行卡号"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="*"
+            android:textColor="#FF5C33"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="传        真"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etFax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/bg_gray_1stroke"
+            android:gravity="center|left"
+            android:hint="请输入传真号"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="*"
+            android:textColor="#FF5C33"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="地        址"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/bg_gray_1stroke"
+            android:gravity="center|left"
+            android:hint="请输入地址"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="*"
+            android:textColor="#FF5C33"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="备        注"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etRemarks"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/bg_gray_1stroke"
+            android:gravity="start"
+            android:hint="请输入备注"
+            android:padding="10dp"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

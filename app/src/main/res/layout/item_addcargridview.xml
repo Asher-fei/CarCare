@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <CheckBox
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@drawable/selector_check_textcolor"
+        android:textSize="14sp"
+        android:button="@null"
+        android:text="嘉实多金嘉护 5W-30"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:background="@drawable/selector_check_itemaddcar"/>
+</LinearLayout>

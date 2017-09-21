@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="115dp"
+    android:layout_height="162dp"
+    android:background="@drawable/bg_spinner"
+    android:gravity="center"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/tvAddService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新增服务"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="#494949"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_line"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"/>
+    <TextView
+        android:id="@+id/tvServiceSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务分类设置"
+        android:textSize="14sp"
+        android:textColor="#494949"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_line"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"/>
+    <TextView
+        android:id="@+id/tvHotServiceSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="常用服务设置"
+        android:textSize="14sp"
+        android:textColor="#494949"/>
+</LinearLayout>
+

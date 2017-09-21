@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="预约单列表："
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <com.midian.base.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/pullToRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.midian.base.widget.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout>

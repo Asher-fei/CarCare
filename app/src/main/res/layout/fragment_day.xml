@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg"
+    android:scrollbars="none">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/window_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="28dp"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="113dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_arc"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="今日营业额"
+                        android:textSize="17sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="¥0"
+                        android:textColor="#FF5C33"
+                        android:textSize="17sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="3.27"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/btnBefore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_arrow_back"
+                    android:padding="8dp"
+                    />
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="12.25"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    />
+                <ImageView
+                    android:id="@+id/btnAfter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_arrow_right"
+                    android:padding="8dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingExtra="10dp"
+                        android:text="总收入"
+                        android:textColor="#434445"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/totalRevenue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingExtra="10dp"
+                        android:paddingTop="10dp"
+                        android:text="¥0"
+                        android:textColor="#434445"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divide_line"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingExtra="10dp"
+                        android:text="总支出"
+                        android:textColor="#434445"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/totalSpending"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingExtra="10dp"
+                        android:paddingTop="10dp"
+                        android:text="¥0"
+                        android:textColor="#434445"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divide_line"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingExtra="10dp"
+                        android:text="净收入"
+                        android:textColor="#434445"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/netIncome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingExtra="10dp"
+                        android:paddingTop="10dp"
+                        android:text="¥0"
+                        android:textColor="#434445"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@drawable/divider_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            >
+            <TextView
+                android:id="@+id/tvSpendingDetail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="#434445"
+                android:textSize="15sp"
+                android:text="支出明细"
+                android:background="@color/white"
+               android:padding="15dp"
+
+                />
+            <ImageView
+                android:id="@+id/SpendingDetailAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#434445"
+                android:textSize="15sp"
+                android:padding="15dp"
+                android:src="@drawable/icon_plus_small"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/divide_line"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            >
+            <TextView
+                android:id="@+id/tvIncomeDetail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#434445"
+                android:textSize="15sp"
+                android:text="收入明细"
+                android:padding="15dp"
+                android:background="@color/white"/>
+            <ImageView
+                android:id="@+id/IncomeDetailAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#434445"
+                android:textSize="15sp"
+                android:padding="15dp"
+                android:src="@drawable/icon_plus_small"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一周年至庆，所有商品八折优惠\n更换刹车油注意事项及视频"
+        android:lineSpacingExtra="8dp"
+        android:textSize="13sp"
+        android:textColor="#232323"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一周年至庆，所有商品八折优惠\n更换刹车油注意事项及视频"
+        android:lineSpacingExtra="8dp"
+        android:textSize="13sp"
+        android:textColor="#232323"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+</LinearLayout>

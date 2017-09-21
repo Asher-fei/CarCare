@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="topbar">#393A3F</color>
+    <color name="text_gray">#6C6C6C</color>
+    <color name="orange">#FD6733</color>
+
+    <color name="btnGray">#CFCFCF</color>
+    <color name="btnOrange">#FF5C33</color>
+    <color name="back_text">#373737</color>
+    <color name="gray_text">#737373</color>
+</resources>

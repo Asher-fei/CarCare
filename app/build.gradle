@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.lida.carcare"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 21
+        versionName "1.2.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi' , 'x86' , 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main{
+            jniLibs.srcDir 'libs'
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file("$rootDir/carcare.jks")
+            storePassword "carcare123"
+            keyAlias "carcare"
+            keyPassword "carcare123"
+        }
+        debug {
+            storeFile file("$rootDir/carcare.jks")
+            storePassword "carcare123"
+            keyAlias "carcare"
+            keyPassword "carcare123"
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':thirdpackage')
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'//统计图表
+    compile 'com.github.mcxtzhang:SuspensionIndexBar:V1.0.0'//侧边车型选择
+    compile 'cn.yipianfengye.android:zxing-library:2.1'//二维码
+    compile 'am.widget:basetabstrip:24.2.1'
+    compile 'com.github.codbking:PickTime:v1.0.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.traex.expandablelayout:library:1.2.2'
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+}

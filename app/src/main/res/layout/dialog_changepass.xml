@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="286dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:paddingTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#242424"
+                android:text="安全验证"/>
+            <TextView
+                android:id="@+id/tvNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="#7D7D7D"
+                android:layout_marginTop="20dp"
+                android:text="密码由6-16位英文字母，数字或字符组成"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置密码"
+                    android:textSize="14sp"
+                    android:textColor="#4E4E4E"/>
+                <EditText
+                    android:id="@+id/etCode"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入6-16位密码"
+                    android:maxLength="16"
+                    android:singleLine="true"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="14sp"
+                    android:background="@null"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#535353"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/select_btn_chechcode"
+                android:enabled="false"
+                android:text="确认"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_close"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="供应商"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvSupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.9"
+            android:gravity="center|left"
+            android:text="顺德供应商"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="联系人"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.9"
+            android:gravity="center|left"
+            android:text="王经理"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.9"
+            android:gravity="center|left"
+            android:text="13800000000"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="传   真"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvFax"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.9"
+            android:gravity="center|left"
+            android:text="020-641190"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="地   址"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.9"
+            android:gravity="center|left"
+            android:text="广州天河"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="备   注"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvRemarks"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.9"
+            android:gravity="center|left"
+            android:text="汽车轮胎供应商"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="其他联系人"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvOtherName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.9"
+            android:gravity="center|left"
+            android:text="杨总"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="银行卡号"
+            android:textColor="#848383"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvBankCard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.9"
+            android:gravity="center|left"
+            android:text="186656651544"
+            android:textColor="#343434"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

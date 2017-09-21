@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_gray_1stroke"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="请输入车牌号"
+            android:paddingLeft="12dp"
+            android:singleLine="true"
+            android:textSize="15sp"/>
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:paddingBottom="10dp">-->
+
+        <!--<TextView-->
+        <!--android:userId="@+userId/tvType"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:drawablePadding="18dp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:text="服务中"-->
+        <!--android:textColor="#007CC4"-->
+        <!--android:textSize="15sp" />-->
+
+        <!--<View-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/divide_line"-->
+        <!--android:layout_marginLeft="18dp"-->
+        <!--android:layout_marginRight="18dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginBottom="8dp"/>-->
+        <!--<TextView-->
+        <!--android:userId="@+userId/tvTime"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="选择进店时间"-->
+        <!--android:textColor="#636363"-->
+        <!--android:drawableRight="@drawable/icon_arrow_down"-->
+        <!--android:drawablePadding="18dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:textSize="15sp"-->
+        <!--android:paddingBottom="10dp"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <com.midian.base.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/pullToRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+</LinearLayout>

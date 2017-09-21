@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/ivDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_reducecustomer"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dp"
+            android:text="客户名称"
+            android:textColor="#363636"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_1stroke"
+            android:hint="请输入姓名"
+            android:padding="11dp"
+            android:singleLine="true"
+            android:textSize="13.5sp"/>
+
+        <RadioGroup
+            android:id="@+id/rgSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:checkedButton="@+id/rbMan"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_checkbox"
+                android:drawablePadding="10dp"
+                android:text="先生"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/rbWomen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_checkbox"
+                android:drawablePadding="10dp"
+                android:text="女士"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dp"
+            android:text="手机号"
+            android:textColor="#363636"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_1stroke"
+            android:hint="请输入手机号"
+            android:padding="11dp"
+            android:singleLine="true"
+            android:textSize="13.5sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="60dp"
+            android:text="关系"
+            android:textColor="#363636"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/etRelation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_1stroke"
+            android:hint="与客户关系"
+            android:padding="11dp"
+            android:singleLine="true"
+            android:textSize="13.5sp"/>
+    </LinearLayout>
+</LinearLayout>

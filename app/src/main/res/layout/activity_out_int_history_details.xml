@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tvNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="单  据  号："
+                android:textColor="#363636"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvStatu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="单据类型："
+                android:textColor="#363636"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="金        额："
+                android:textColor="#363636"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="制单日期："
+                android:textColor="#363636"
+                android:textSize="14sp" />
+
+</LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="#f3f3f3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="商品："/>
+
+            <com.lida.carcare.widget.InnerListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"></com.lida.carcare.widget.InnerListView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

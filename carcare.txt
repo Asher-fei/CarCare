@@ -1,0 +1,37 @@
+输入密钥库口令: carcare123
+
+密钥库类型: JKS
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+别名: carcare
+创建日期: 2017-4-6
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=lida, OU=lida, O=lida, L=lida, ST=lida, C=lida
+发布者: CN=lida, OU=lida, O=lida, L=lida, ST=lida, C=lida
+序列号: 48cfa1c8
+有效期开始日期: Thu Apr 06 17:17:19 CST 2017, 截止日期: Mon Mar 31 17:17:19 CST 2042
+证书指纹:
+         MD5: 6A:F0:4F:E0:AE:DA:ED:B8:E4:9B:FE:CE:5E:E8:7F:97
+         SHA1: 19:4A:93:09:36:14:5A:D1:06:CA:56:8C:6A:9B:07:AB:FA:C3:D5:1F
+         SHA256: 6A:76:5A:25:4A:51:73:4F:E6:DB:78:EA:7F:36:86:4D:DE:47:BB:08:AA:E4:0E:B6:86:D5:D0:4F:BC:B6:CD:0F
+         签名算法名称: SHA256withRSA
+         版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 1B F6 41 11 CE A0 FE 3D   89 F3 DF 33 58 F7 A6 EF  ..A....=...3X...
+0010: E8 9E 75 9E                                        ..u.
+]
+]
+
+
+
+*******************************************
+*******************************************

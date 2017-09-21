@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#FFF"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:paddingBottom="15dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingTop="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivPic"
+            android:layout_width="95dp"
+            android:layout_height="84dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/temp_good7"
+            app:riv_corner_radius="3dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="商品名"
+                android:textColor="#1F2020"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvProductCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="编码：0036"
+                android:textColor="#8A8888"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥ 300"
+                    android:textColor="#FF5C33"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="x1"
+                    android:textColor="#FF5C33"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/divider_line"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入库库位"
+                    android:textSize="13sp"
+                    android:textColor="#3E3E3E"
+                    />
+                <TextView
+                    android:id="@+id/tvStorage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请选择入库库位"
+                    android:textSize="13sp"
+                    android:textColor="#3E3E3E"
+                    android:drawableRight="@drawable/icon_arrow_r"
+                    android:gravity="right"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

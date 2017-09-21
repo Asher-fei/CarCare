@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="11dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon_head_temp"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_weight="1"
+        android:text="小纯"
+        android:textColor="#0D0D0D"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvCommission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:text="￥4846.00"
+        android:textColor="#6D6D6D"
+        android:textSize="15sp"/>
+</LinearLayout>

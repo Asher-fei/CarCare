@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:scrollbars="none">
+
+    <!--<com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#FF5C33"
+        android:layout_height="73dip">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dip"
+            android:layout_height="48dip">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="7.7dp"
+                    android:text="@string/title"
+                    android:textSize="@dimen/textSP17"
+                    android:textColor="#ffffff"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/press_btn_bg"
+                android:clickable="true"
+                android:descendantFocusability="beforeDescendants"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp" >
+
+                <ImageButton
+                    android:id="@+id/left_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/press_btn_bg"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/inputArea"
+                android:layout_margin="5dp"
+                android:gravity="right"
+                android:paddingRight="5dp" >
+
+                <ImageButton
+                    android:id="@+id/right_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/press_btn_bg"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/icon_message"
+                    android:visibility="visible" />
+                <TextView
+                    android:id="@+id/messageCount"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/shape_circle"
+                    android:textSize="10sp"
+                    android:visibility="invisible"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/window_bg"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <com.midian.base.widget.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                app:indicator_height="7dp"
+                app:indicator_width="7dp">
+            </com.midian.base.widget.Banner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="11dp">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/icon_topnew"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@color/divide_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.lida.carcare.widget.MarqueeTextView
+                        android:id="@+id/marqueeTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#FFF"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTab1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_tab1"
+                        android:gravity="center"
+                        android:text="在店车辆"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTab3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_tab3"
+                        android:gravity="center"
+                        android:text="施工单"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTab4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_tab4"
+                        android:gravity="center"
+                        android:text="营业统计"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTab6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_tab6"
+                        android:gravity="center"
+                        android:text="员工绩效"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTab5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_tab5"
+                        android:gravity="center"
+                        android:text="智能提醒"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTab7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_tab7"
+                        android:gravity="center"
+                        android:text="会员管理"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTab8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_tab8"
+                        android:gravity="center"
+                        android:text="客户管理"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTab9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_tab9"
+                        android:gravity="center"
+                        android:text="车辆管理"
+                        android:textSize="11sp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#FFF"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tvTab10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_tab10"
+                        android:gravity="center"
+                        android:text="库存管理"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTab11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_tab11"
+                        android:gravity="center"
+                        android:text="商品管理"
+                        android:textSize="11sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tvTab12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_tab12"
+                        android:gravity="center"
+                        android:text="服务管理"
+                        android:textSize="11sp"/>
+
+                    <TextView
+                        android:id="@+id/tvTab13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_my_order"
+                        android:gravity="center"
+                        android:text="订货"
+                       android:visibility="gone"
+                        android:textSize="11sp"/>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        >
+                        <TextView
+                            android:id="@+id/tvTab14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:drawablePadding="6dp"
+                            android:drawableTop="@drawable/icon_rescue"
+                            android:gravity="center"
+                            android:text="车辆救援"
+                            android:visibility="visible"
+                            android:textSize="11sp"/>
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="16dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            />
+                        <TextView
+                            android:id="@+id/rescueCount"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:text="3"
+                            android:gravity="center"
+                            android:layout_toRightOf="@id/view"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/shape_circle"
+                            android:textSize="10sp"
+                            android:visibility="invisible"
+                            />
+                    </RelativeLayout>
+                    <!--<TextView
+                        android:id="@+id/tvTab14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="6dp"
+                        android:drawableTop="@drawable/icon_rescue"
+                        android:gravity="center"
+                        android:text="车辆救援"
+                        android:visibility="visible"
+                        android:textSize="11sp"/>-->
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

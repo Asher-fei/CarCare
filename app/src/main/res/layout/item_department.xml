@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rb"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:button="@null"
+    android:text="美容用户"
+    android:textColor="#383839"
+    android:textSize="14sp"
+    android:drawableRight="@drawable/selector_cb_round"/>

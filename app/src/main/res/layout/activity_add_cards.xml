@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical"
+    >
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="卡名称"
+                    android:textColor="#252525"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/bg_gray_1stroke"
+                    android:hint="请输入卡名称"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="卡售价"
+                    android:textColor="#252525"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/bg_gray_1stroke"
+                    android:hint="请输入卡售价"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否限开卡车牌"
+                android:textColor="#252525"
+                android:button="@drawable/selector_checkbox_tick"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+               android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_gray_1stroke"
+                android:hint="请输入备注"
+                android:inputType="number"
+                android:minHeight="60dp"
+                android:padding="10dp"
+                android:textSize="13sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="包含服务项目"
+                    android:layout_weight="1"
+                    android:textColor="#252525"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/addServiceItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="right"
+                    android:drawableLeft="@drawable/icon_plus_round"
+                    android:padding="10dp"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <com.lida.carcare.widget.InnerListView
+                android:id="@+id/lvService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.lida.carcare.widget.InnerListView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FF5C33"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="17sp"/>
+
+</LinearLayout>

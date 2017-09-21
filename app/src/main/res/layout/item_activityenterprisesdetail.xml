@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="11dp"
+    android:gravity="center_vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tvCarNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1"
+            android:text="湘A16888"
+            android:textColor="#6C6A6A"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1"
+            android:text="2017.03.28"
+            android:textColor="#959595"
+            android:layout_marginTop="13dp"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:textColor="#6D6D6D"
+        android:text="￥10.00"
+        android:textSize="15sp"
+        android:layout_marginLeft="13dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lida.carcare.widget.ItemCanClick
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemRefit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:ivTitle="@drawable/icon_refit"
+    android:layout_marginTop="10dp"
+    app:tvTitle="改装\u0026用品">
+</com.lida.carcare.widget.ItemCanClick>

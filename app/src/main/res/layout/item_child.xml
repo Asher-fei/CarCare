@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/divide_line"/>
+
+    <LinearLayout
+        android:id="@+id/llItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingLeft="45dp"
+        android:paddingRight="10dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="底盘"
+            android:textColor="#444444"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="33dp"
+            android:layout_height="19dp"
+            android:background="@drawable/bg_lightkgray_solid"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#707070"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <com.lida.carcare.widget.InnerListView
+        android:id="@+id/llChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.lida.carcare.widget.InnerListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/divide_line"/>
+</LinearLayout>

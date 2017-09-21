@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="服务大类"
+            android:textColor="#636363"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="服务细类"
+            android:paddingLeft="10dp"
+            android:textColor="#636363"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAddChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_1stroke"
+            android:drawableLeft="@drawable/icon_plus_smaller"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="添加细类"
+            android:textColor="#636363"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.lida.carcare.widget.InnerListView
+                    android:id="@+id/parentList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:background="#F6f4f4">
+                </com.lida.carcare.widget.InnerListView>
+                <Button
+                    android:id="@+id/btnAddParentClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="添加大类"
+                    android:padding="15dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+        </ScrollView>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divide_line"/>
+        <ListView
+            android:id="@+id/childList"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:scrollbars="none"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

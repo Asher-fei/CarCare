@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical"
+    >
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="客户姓名"
+                android:textColor="#252525"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/onceCardName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gray_1stroke"
+                android:hint="请输入客户姓名"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btnChooseCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/bg_2radiu_orange"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="选择系统已有客户"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textColor="#252525"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3"
+                android:background="@drawable/bg_gray_1stroke"
+                android:hint="请输入客户手机号"
+                android:inputType="number"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="选择卡种"
+                android:textColor="#252525"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/selectCardType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3"
+                android:background="@drawable/bg_gray_1stroke"
+                android:hint="请选择卡种"
+                android:padding="10dp"
+                android:drawableRight="@drawable/icon_arrow_r"
+                android:gravity="right"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="有效期"
+                android:textColor="#252525"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/selectValidityPeriod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3"
+                android:background="@drawable/bg_gray_1stroke"
+                android:hint="请选择有效期"
+                android:padding="10dp"
+                android:drawableRight="@drawable/icon_arrow_r"
+                android:gravity="right"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="开卡车牌"
+                android:textColor="#252525"
+                android:textSize="14sp"/>
+
+            <com.lida.carcare.widget.EditCarNumber
+                android:id="@+id/carNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="1">
+            </com.lida.carcare.widget.EditCarNumber>
+
+            <ImageView
+                android:id="@+id/ivScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_scan"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="卡号"
+                android:textColor="#252525"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/onceCardNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3"
+                android:background="@drawable/bg_gray_1stroke"
+                android:hint="请输入卡号"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#FF5C33"
+                android:text="开卡"
+                android:textColor="@color/white"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.inputmethodservice.KeyboardView
+                android:id="@+id/keyboard_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:keyBackground="@drawable/button_keyboard"
+                android:keyTextColor="#000000"
+                android:keyTextSize="16sp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

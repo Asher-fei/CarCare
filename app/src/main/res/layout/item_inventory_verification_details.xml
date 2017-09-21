@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#252525"
+                android:text="22222"
+                android:textSize="14sp"
+                android:padding="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="#7c7b7b"
+                android:text="编   码："
+                android:textSize="13sp"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/productInternationalCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7c7b7b"
+                android:text="676541"
+                android:textSize="13sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="#7c7b7b"
+                android:text="仓   库："
+                android:textSize="13sp"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/repertoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7c7b7b"
+                android:text="常备仓库"
+                android:textSize="13sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7c7b7b"
+                android:text="原储："
+                android:textSize="15sp"
+                android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff6633"
+                    android:text="120"
+                    android:textSize="15sp"
+                    android:padding="5dp"/>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#7c7b7b"
+                    android:text="盘点："
+                    android:textSize="15sp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/shoutStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff6633"
+                    android:text="122"
+                    android:textSize="15sp"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_shoutOK"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff6633"
+                    android:text="盘盈："
+                    android:textSize="15sp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/shoutOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff6633"
+                    android:text="2"
+                    android:textSize="15sp"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_shoutNo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:text="盘亏："
+                    android:textSize="15sp"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/shoutNO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

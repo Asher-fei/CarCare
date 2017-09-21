@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.midian.base.widget.BaseLibTopbarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+            <EditText
+                android:id="@+id/tvSearch"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_gray_1stroke"
+                android:drawableLeft="@drawable/icon_search"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:hint="请输入搜索关键词"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="12dp"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:textSize="12sp"/>
+
+            <com.midian.base.widget.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                app:indicator_height="7dp"
+                android:visibility="gone"
+                app:indicator_width="7dp"></com.midian.base.widget.Banner>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:scaleType="centerCrop"
+                />
+            <com.lida.carcare.widget.InnerGridView
+                android:id="@+id/gridView_class"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="10dp"
+                android:layout_marginTop="10dp"
+                android:numColumns="4"
+                android:padding="10dp"
+                android:scrollbars="none"
+                android:background="#FFFFFF"
+                android:verticalSpacing="10dp">
+            </com.lida.carcare.widget.InnerGridView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/divider_line"
+                />
+            <com.lida.carcare.widget.InnerGridView
+                android:id="@+id/gridView_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:padding="10dp"
+                android:scrollbars="none"
+                android:background="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:verticalSpacing="10dp">
+            </com.lida.carcare.widget.InnerGridView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

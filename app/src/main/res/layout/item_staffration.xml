@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="30dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#1C1C1C"
+            />
+        <EditText
+            android:id="@+id/count"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="请输入提成比例"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:background="@drawable/bg_gray_1stroke"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/tvReduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_reduce"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

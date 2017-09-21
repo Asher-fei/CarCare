@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tvMile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进店里程：0"
+            android:textSize="14sp"
+            android:textColor="#252525"/>
+        <TextView
+            android:id="@+id/tvDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="刹车片，皮带待定，下次保养再进行更换"
+            android:textSize="14sp"
+            android:textColor="#8B8989"
+            android:layout_marginTop="14sp"
+            android:drawableRight="@drawable/icon_arrow_r"/>
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17sp"
+            android:text="2011.03.28"
+            android:textSize="14sp"
+            android:gravity="end"
+            android:textColor="#8B8989"/>
+    </LinearLayout>
+</LinearLayout>

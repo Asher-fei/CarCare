@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp" >
+
+    <com.lida.carcare.widget.logisticsview.LogisticsTextView
+        android:id="@+id/info_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="张三"
+        android:autoLink="phone"
+        android:textColor="#9E9E9E"
+        android:textSize="14sp" 
+        android:layout_marginBottom="5dp"/>
+
+    <com.lida.carcare.widget.logisticsview.LogisticsTextView
+        android:id="@+id/dateTime_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="2016-06-27  12:14:36"
+        android:textColor="#9E9E9E"
+        android:textSize="12sp" 
+        android:visibility="visible"/>
+</LinearLayout>

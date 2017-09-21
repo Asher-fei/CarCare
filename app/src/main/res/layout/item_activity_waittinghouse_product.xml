@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFF"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:paddingBottom="15dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingTop="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivPic"
+            android:layout_width="95dp"
+            android:layout_height="84dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/temp_good7"
+            app:riv_corner_radius="3dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="商品名"
+                android:textColor="#1F2020"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvCarNo"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="编码：0036"
+                android:textColor="#8A8888"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥ 300"
+                    android:textColor="#FF5C33"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="x1"
+                    android:textColor="#FF5C33"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

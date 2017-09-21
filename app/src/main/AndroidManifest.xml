@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lida.carcare">
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".app.BaseAppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/leftToRightTheme"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name=".login.ActivityLogin"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme1"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主页面 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme1"
+            android:screenOrientation="portrait" />
+        <!-- 新增客户 -->
+        <activity
+            android:name=".activity.ActivityAddCustomer"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 在店车辆 -->
+        <activity
+            android:name=".activity.ActivityCars"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 添加新车 -->
+        <activity
+            android:name=".activity.ActivityAddCar"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 车主嘱咐 -->
+        <activity
+            android:name=".activity.ActivityCustomerOrder"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 接车出单 -->
+        <activity
+            android:name=".activity.ActivityReception"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 选择客户 -->
+        <activity
+            android:name=".activity.ActivityChooseCustomer"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 施工单 -->
+        <activity
+            android:name=".activity.ActivityWorkOrder"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 派单 -->
+        <activity
+            android:name=".activity.ActivityDispatch"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 绩效管理汇总 -->
+        <activity
+            android:name=".activity.ActivityEnterprises"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 绩效管理详情 -->
+        <activity
+            android:name=".activity.ActivityEnterprisesDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 绩效管理-个人绩效收入详情列表 -->
+        <activity
+            android:name=".activity.ActivityEnterprisesDetailList"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 开单记录 -->
+        <activity
+            android:name=".activity.ActivityBillingRecords"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 营业统计 -->
+        <activity
+            android:name=".activity.ActivityBusinessStatistics"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 会员管理 -->
+        <activity
+            android:name=".activity.ActivityMemberManager"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 余次不足 -->
+        <activity
+            android:name=".activity.ActivityMoneyNotEnough"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 会员详情 -->
+        <activity
+            android:name=".activity.ActivityMemberDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 充值 -->
+        <activity
+            android:name=".activity.ActivityRecharge"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 记录明细 -->
+        <activity
+            android:name=".activity.ActivityRecordDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 添加项目 -->
+        <activity
+            android:name=".activity.ActivityAddProject"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 智能提醒 -->
+        <activity
+            android:name=".activity.ActivityRemind"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 提醒详情 -->
+        <activity
+            android:name=".activity.ActivityNoticeDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 创建提醒 -->
+        <activity
+            android:name=".activity.ActivityCreateNotice"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 到期时间 -->
+        <activity
+            android:name=".activity.ActivityDateExpire"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 提醒时间 -->
+        <activity
+            android:name=".activity.ActivityDateNotice"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 提醒设置 -->
+        <activity
+            android:name=".activity.ActivityNoticeSetting"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 车辆详情 -->
+        <activity
+            android:name=".activity.ActivityCarDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 车辆详情-车辆信息 -->
+        <activity
+            android:name=".activity.ActivityCarDetailInfo"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--检测明细-->
+        <activity
+            android:name=".activity.ActivityCheckDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--服务管理-->
+        <activity
+            android:name=".activity.ActivityServiceManager"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 新增服务 -->
+        <activity
+            android:name=".activity.ActivityAddService"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 服务列表 -->
+        <activity
+            android:name=".activity.ActivityServiceList"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 服务详情 -->
+        <activity
+            android:name=".activity.ActivityServiceDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 服务分类设置 -->
+        <activity
+            android:name=".activity.ActivityServiceClassSetting"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".temp.PieChart"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- 结算页面 -->
+        <activity
+            android:name=".activity.ActivitySettleMent"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 车辆服务-修改车辆信息 -->
+        <activity
+            android:name=".activity.ActivityModifyCarInfo"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 改派 -->
+        <activity
+            android:name=".activity.ActivityDispatchChanged"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 技师 -->
+        <activity
+            android:name=".activity.ActivityChooseServer"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 变更项目 -->
+        <activity
+            android:name=".activity.ActivityModifyItem"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 变更金额 -->
+        <activity
+            android:name=".activity.ActivityModifyBalance"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 卡编辑 -->
+        <activity
+            android:name=".activity.ActivityModifyCard"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 项目延期 -->
+        <activity
+            android:name=".activity.ActivityProjectExtension"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 卡作废 -->
+        <activity
+            android:name=".activity.ActivityCardInvalid"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 项目延期 -->
+        <activity
+            android:name=".activity.ActivityRechargeDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 车辆管理 -->
+        <activity
+            android:name=".activity.ActivityCarManege"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 库存管理 -->
+        <activity
+            android:name=".activity.ActivityWarehouseManege"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 退货详情 -->
+        <activity
+            android:name=".activity.ActivityReturnGoods"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 仓库盘点 -->
+        <activity
+            android:name=".activity.ActivityInventory"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 领料出库 -->
+        <activity
+            android:name=".activity.ActivityReceiveGoods"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 商品管理 -->
+        <activity
+            android:name=".activity.ActivityGoodsManager"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 新增商品 -->
+        <activity
+            android:name=".activity.ActivityAddGoods"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 商品详情 -->
+        <activity
+            android:name=".activity.ActivityGoodDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 商品分类设置 -->
+        <activity
+            android:name=".activity.ActivityGoodsClassSetting"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 邀请同事 -->
+        <activity
+            android:name=".activity.ActivityInvitation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--设置-->
+        <activity
+            android:name=".activity.ActivitySetting"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--注销账号-->
+        <activity
+            android:name=".activity.ActivityZhuXiao"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--项目管理-->
+        <activity
+            android:name=".activity.ActivityProjectManege"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--项目详情-->
+        <activity
+            android:name=".activity.ActivityProjectDetail"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--管理-->
+        <activity
+            android:name=".activity.ActivityStaffManage"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--详情-->
+        <activity
+            android:name=".activity.ActivityStaffDetail1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--已通过员工详情-->
+        <activity
+            android:name=".activity.ActivityStaffDetail2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--详情-->
+        <activity
+            android:name=".activity.ActivityStaffDetail3"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--角色权限-->
+        <activity
+            android:name=".activity.ActivityRolePermission"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--职位-->
+        <activity
+            android:name=".activity.ActivityZhiWei"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--待领料车辆-->
+        <activity
+            android:name=".activity.ActivityReadyToReceiveGoodsList"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--领料-->
+        <activity
+            android:name=".activity.ActivityReceiveGoodsCar"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".camera.RectCameraActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <activity android:name=".activity.Test"/>
+        <!--老板注册-->
+        <activity
+            android:name=".login.ActivityRegister"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--注册-->
+        <activity
+            android:name=".login.ActivityRegisterStaff"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--老板注册之后提交资料-->
+        <activity
+            android:name=".activity.ActivityCommitData"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--派单到-->
+        <activity
+            android:name=".activity.ActivityDispatchToWorker"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!--商品列表-->
+        <activity
+            android:name=".activity.ActivityGoodList"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!--商品搜索结果页-->
+        <activity
+            android:name=".activity.ActivityGoodSearchResult"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!--服务搜索结果页-->
+        <activity
+            android:name=".activity.ActivityServiceSearchResult"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!--根据项目选择-->
+        <activity
+            android:name=".activity.ActivityDispatchToChooseWorker"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!--车店列表-->
+        <activity
+            android:name=".activity.ActivityShopList"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!--编辑商品-->
+        <activity
+            android:name=".activity.ActivityEditGoods"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <!--编辑服务-->
+        <activity
+            android:name=".activity.ActivityEditService"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <!--树形列表-->
+        <activity
+            android:name=".activity.ActivityDispatchToChooseWorkerNew"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!--选择服务-->
+        <activity
+            android:name=".activity.ActivitySelectServer"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!-- 显示公告内容 -->
+        <activity
+            android:name=".activity.LineWebView"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!-- 检车 -->
+        <activity
+            android:name=".activity.ActivityCheckCar"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--职位管理-->
+        <activity
+            android:name=".activity.ActivityPositionManage"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!--职位  测试-->//TODO
+        <activity android:name=".activity.ActivityDepartment"/>
+        <!--供应商清单 -->
+        <activity
+            android:name=".activity.ActivitySupplierManage"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!--仓库管理-仓库设置-->
+        <activity
+            android:name=".activity.ActivityStorage"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!--仓库管理-增加仓库-->
+        <activity
+            android:name=".activity.ActivityAddStorage"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!--仓库管理-编辑仓库-->
+        <activity
+            android:name=".activity.ActivityEditStorage"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"/>
+        <!--采购-->
+        <activity
+            android:name=".activity.ActivityPurchase"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--供应商详情-->
+        <activity
+            android:name=".activity.ActivitySupplierListDetails"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--编辑供应商-->
+        <activity
+            android:name=".activity.ActivitySupplierListEdit"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <!--采购记录-->
+        <activity
+            android:name=".activity.ActivityPurchaseHistory"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 其它入库 -->
+        <activity
+            android:name=".activity.ActivityDirectInStorage"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 采购商品-选择商品 -->
+        <activity
+            android:name=".activity.ActivityQueryAllGoods"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 车辆管理-车辆详情 -->
+        <activity
+            android:name=".activity.ActivityEditCarInfo"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 库存管理-待入库 -->
+        <activity
+            android:name=".activity.ActivityWaittingWareHouse"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 库存管理-采购退货 -->
+        <activity
+            android:name=".activity.ActivityPurchaseReturn"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 出入库记录 -->
+        <activity
+            android:name=".activity.ActivityOutIntHistory"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 库存盘点 -->
+        <activity
+            android:name=".activity.ActivityInventoryVerification"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 库存盘点-新增 -->
+        <activity
+            android:name=".activity.ActivityInventoryVerificationNewAdd"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 盘点详情 -->
+        <activity
+            android:name=".activity.ActivityInventoryVerificationDetails"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 采购详情 -->
+        <activity
+            android:name=".activity.ActivityPurchaseDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.ActivityOutIntHistoryDetails"></activity>
+         <!--领料出库商品列表-->
+        <activity
+            android:name=".activity.ActivitySelectOutboundGoods"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--商品分类列表-->
+        <activity
+            android:name=".activity.ActivityGoodsClass"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.ActivityChooseGoodsCommen"/>
+        <activity android:name=".activity.ActivityChooseGoodCommen"/>
+        <!--入库-->
+        <activity android:name=".activity.ActivityPutInStorage"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".activity.ActivityLookDetail"/>
+        <!--开充值卡-->
+        <activity android:name=".activity.ActivityPrepaidPhoneCard"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--开次卡-->
+        <activity android:name=".activity.ActivityOpenTimeCard"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--次卡详情-->
+        <activity android:name=".activity.ActivityOpenTimeCardDetail"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--卡种设置-->
+        <activity android:name=".activity.ActivityCardSetting"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--添加卡种-->
+        <activity android:name=".activity.ActivityAddCards"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--充值-->
+        <activity android:name=".activity.ActivityTopup"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--收入明细-->
+        <activity android:name=".activity.ActivityIncomeDetails"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--支出明细-->
+        <activity android:name=".activity.ActivitySpendingDetail"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--收入明细录入-->
+        <activity android:name=".activity.ActivityIncomeDetailAdd"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--支出明细录入-->
+        <activity android:name=".activity.ActivitySpendingDetailAdd"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--余额不足列表-->
+        <activity android:name=".activity.ActivityLackOfBalance"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--余次不足列表-->
+        <activity android:name=".activity.ActivityOverTimeLessThan"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--即将过期列表-->
+        <activity android:name=".activity.ActivityWillExpire"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--已过期列表-->
+        <activity android:name=".activity.ActivityExpire"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!--次卡列表-->
+        <activity android:name=".activity.ActivityTimeCardList"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!--充值卡列表-->
+        <activity android:name=".activity.ActivityPreloadedCardsList"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--有限卡列表-->
+        <activity android:name=".activity.ActivityLimitedOfCardsList"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!--无限卡列表-->
+        <activity android:name=".activity.ActivityUnlimitedList"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!--已关闭提醒列表-->
+        <activity android:name=".activity.ActivityRemindShutDown"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!--盘点库存-新增-筛选商品-->
+        <activity android:name=".activity.ActivityScreenInventoryShop"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--其它出库-->
+        <activity android:name=".activity.ActivityOtherOutBound"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--客户详情-->
+        <activity android:name=".activity.ActivityCustomerDetail"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--订货-->
+        <activity android:name=".activity.ActivityPlaceAnOrder"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--订单详情-->
+        <activity android:name=".activity.ActivityOrderDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--选择订货商品列表-->
+        <activity
+            android:name=".activity.ActivityChooseOrderGood"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--已选择订货商品列表-->
+        <activity
+            android:name=".activity.ActivityOrderGoodChoosed"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--我的订单-->
+        <activity
+            android:name=".activity.ActivityOrderedList"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--公众号预约-->
+        <activity
+            android:name=".activity.ActivityPublicAppointment"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--订单物流  网页-->
+        <activity
+            android:name=".activity.ActivityOrderLogisticsWeb"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--订单物流-->
+        <activity
+            android:name=".activity.ActivityOrderLogistics"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--救援-->
+        <activity
+            android:name=".activity.ActivityLocateTheRescue"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--常用服务设置-常用服务列表-->
+        <activity
+            android:name=".activity.ActivityHotServiceSetting"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <!--添加新车-自定义服务项目-->
+        <activity
+            android:name=".activity.ActivityAddCustomProject"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <receiver android:name=".updater.ApkInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="y6fMDLADXip0o4kXQRVqRzurwUspbqz7" />
+
+        <!--微信支付回调-->
+        <activity android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            ></activity>
+
+        <!-- 百度定位服务 -->
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="13dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="13dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="95dp"
+            android:layout_height="84dp"
+            android:scaleType="centerCrop"
+            android:src="#DDD"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="SONAX真皮清洁养护"
+                android:textColor="#363636"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="编码：1221"
+                android:textColor="#8A8888"
+                android:textSize="13sp"/>
+
+            <LinearLayout
+                android:id="@+id/llPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="价格："
+                    android:textColor="#8A8888"
+                    android:textSize="13sp"/>
+
+                <EditText
+                    android:id="@+id/etPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray_1stroke"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="请输入价格"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#8A8888"
+                    android:textSize="13sp"/>
+
+                <com.lida.carcare.widget.NumberWidget
+                    android:id="@+id/etCount"
+                    android:layout_width="95dp"
+                    android:layout_height="31dp"
+                    android:layout_marginLeft="30dp">
+                </com.lida.carcare.widget.NumberWidget>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/divider_line"
+                android:layout_marginTop="5dp"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入库库位"
+                    android:textColor="#3E3E3E"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvStorage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/icon_arrow_r"
+                    android:gravity="right"
+                    android:hint="请选择入库库位"
+                    android:textColor="#3E3E3E"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

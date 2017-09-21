@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="#FF7A00">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:foregroundGravity="center"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/ivHead"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:background="@drawable/bg_50radiu_white"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_head_temp"
+                        app:riv_border_color="#ECB37F"
+                        app:riv_border_width="3dp"
+                        app:riv_corner_radius="40dp"/>
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="汽车美容(老板)"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+                <!--<ImageView-->
+                <!--android:userId="@+userId/ivSetting"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/icon_setting"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_margin="16dp"/>-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="14dp"
+                    android:text="员工管理"
+                    android:textColor="#363636"
+                    android:textSize="15sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divide_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvReadyToCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="6dp"
+                            android:drawableTop="@drawable/icon_readycheck"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="待审核"
+                            android:textColor="#323232"
+                            android:textSize="9sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvAlreadyPass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="6dp"
+                            android:drawableTop="@drawable/icon_pass"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="已通过"
+                            android:textColor="#323232"
+                            android:textSize="9sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvAlreadyRefuse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="6dp"
+                            android:drawableTop="@drawable/icon_refuse"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="已拒绝"
+                            android:textColor="#323232"
+                            android:textSize="9sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="120dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="邀请码"
+                    android:textColor="#363636"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvInvitationCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="8649"
+                    android:textColor="#363636"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProjectManage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_p1"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="职位管理"
+                    android:textColor="#323232"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_arrow_r"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divide_line"/>
+
+            <LinearLayout
+                android:id="@+id/llInvitation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_p2"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="邀请同事"
+                    android:textColor="#323232"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_arrow_r"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

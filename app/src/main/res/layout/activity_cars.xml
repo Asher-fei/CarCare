@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_gray_1stroke"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_search"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:hint="搜索车牌"
+                android:singleLine="true"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/icon_scan"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llCarBeauty"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#Fee"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_beautycar"
+                    android:text="美容"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvCarBeautyNum"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/bg_20radiu_orange"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#272626"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMainTain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_maintain"
+                    android:text="保养"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvMainTainNum"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/bg_20radiu_orange"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#272626"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRepair"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_repair"
+                    android:text="维修"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvCarRepairNum"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/bg_20radiu_orange"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#272626"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRefit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_refit"
+                    android:text="换装"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvCarRefitNum"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/bg_20radiu_orange"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="#272626"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

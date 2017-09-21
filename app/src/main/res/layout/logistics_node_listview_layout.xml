@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="horizontal" >
+
+    <com.lida.carcare.widget.logisticsview.LogisticsNodeLineView
+        android:id="@+id/nodeLineView"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+       />
+
+    <com.lida.carcare.widget.logisticsview.LogisticsListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:dividerHeight="0.5dp"
+        android:cacheColorHint="#000000"
+        android:background="@android:color/white"
+        android:divider="#D8D8D8" />
+
+</LinearLayout>

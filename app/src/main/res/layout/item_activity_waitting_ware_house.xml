@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF"
+              android:orientation="vertical"
+              android:padding="8dp"
+              android:id="@+id/layout_parent_item"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广州供应商"
+            android:textColor="#363636"
+            android:textSize="16sp"
+            android:button="@drawable/selector_checkbox_tick"
+            android:paddingLeft="8dp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:text="¥ 0.00"
+            android:textColor="#FF6633"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/tvPrice"
+            android:padding="5dp"
+            android:text="总金额："
+            android:textColor="#A4A4A4"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="物流单号："
+            android:textColor="#252525"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/logisticsCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/bg_gray_1stroke"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="0001"
+            android:textColor="#A4A4A4"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="物流公司："
+            android:textColor="#252525"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/logisticsCompany"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/bg_gray_1stroke"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/icon_arrow_r"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="顺丰"
+            android:textColor="#A4A4A4"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="采购时间："
+            android:textColor="#252525"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/purchaseDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2.5"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="2017-6-26"
+            android:textColor="#A4A4A4"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/divide_line"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/tvCheckDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看明细"
+            android:textColor="#008DCF"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/cancellations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="撤单"
+            android:textColor="#969696"
+            android:textSize="13sp"
+            />
+    </RelativeLayout>
+    <com.lida.carcare.widget.InnerListView
+        android:id="@+id/innerListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+    </com.lida.carcare.widget.InnerListView>
+
+
+</LinearLayout>

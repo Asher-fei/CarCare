@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/window_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="客户类型"
+                    android:textColor="#363636"
+                    android:textSize="14sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/rbPersonal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPersonal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_checkbox"
+                        android:drawablePadding="10dp"
+                        android:text="个人"/>
+
+                    <RadioButton
+                        android:id="@+id/rbCompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_checkbox"
+                        android:drawablePadding="10dp"
+                        android:text="单位"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dp"
+                    android:text="客户名称"
+                    android:textColor="#363636"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray_1stroke"
+                    android:hint="请输入姓名"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textSize="13.5sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checkedButton="@+id/rbMan"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_checkbox"
+                        android:drawablePadding="10dp"
+                        android:text="先生"
+                        android:textSize="15sp"/>
+
+                    <RadioButton
+                        android:id="@+id/rbWomen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/selector_checkbox"
+                        android:drawablePadding="10dp"
+                        android:text="女士"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dp"
+                    android:text="手机号"
+                    android:textColor="#363636"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray_1stroke"
+                    android:hint="请输入手机号"
+                    android:padding="11dp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="13.5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dp"
+                    android:text="客户级别"
+                    android:textColor="#363636"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvGrade"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray_1stroke"
+                    android:drawableRight="@drawable/icon_arrow_r"
+                    android:hint="请选择客户级别"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textSize="13.5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dp"
+                    android:text="客户来源"
+                    android:textColor="#363636"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray_1stroke"
+                    android:drawableRight="@drawable/icon_arrow_r"
+                    android:hint="请选择客户来源"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textSize="13.5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dp"
+                    android:text="生日"
+                    android:textColor="#363636"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvBirth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray_1stroke"
+                    android:drawableRight="@drawable/icon_date"
+                    android:hint="年，月，日"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textSize="13.5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dp"
+                    android:text="微信昵称"
+                    android:textColor="#363636"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/etNickName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray_1stroke"
+                    android:hint="请输入微信昵称"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textSize="13.5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="60dp"
+                    android:text="所在单位"
+                    android:textColor="#363636"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/tvCompany"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray_1stroke"
+                    android:hint="请输入客户所在单位"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textSize="13.5sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他联系人"
+                    android:textColor="#2B2A2A"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <com.lida.carcare.widget.InnerListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.lida.carcare.widget.InnerListView>
+
+            <Button
+                android:id="@+id/btnAddContact"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_addcustomer"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="添加联系人"/>
+
+            <EditText
+                android:id="@+id/etRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_gray_1stroke"
+                android:gravity="start"
+                android:hint="备注"
+                android:minHeight="100dp"
+                android:padding="10dp"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

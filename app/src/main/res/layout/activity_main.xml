@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <!--<com.midian.base.widget.BaseLibTopbarView-->
+    <!--android:userId="@+userId/topbar"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#FF5C33">-->
+    <!--</com.midian.base.widget.BaseLibTopbarView>-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/gts_vp_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llbot"
+        android:layout_below="@+id/topbar"/>
+
+    <LinearLayout
+        android:id="@+id/llbot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divide_line"/>
+
+        <com.lida.carcare.widget.grandienttab.GradientTabStrip
+            android:id="@+id/gradientTabStrip"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFF"
+            android:textColor="@color/color_gradienttabstrip_tab"
+            android:textSize="12sp"
+            app:gtsDrawablePadding="4dp"
+            app:gtsTagPaddingLeft="2dp"
+            app:gtsTagPaddingRight="2dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/icon_camera_home"/>
+</RelativeLayout>

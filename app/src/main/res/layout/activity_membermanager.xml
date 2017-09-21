@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llMemberNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_member"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="36dp"
+                        android:text="会员数:"
+                        android:textColor="#3B3B3B"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tvMemberNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#1591FA"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lltimeCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="36dp"
+                        android:text="次    卡:"
+                        android:textColor="#3B3B3B"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/timeCardNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#1591FA"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPreloadedCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="36dp"
+                        android:text="充值卡:"
+                        android:textColor="#3B3B3B"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/numberOfPreloadedCards"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#1591FA"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lllimitedNumberOfCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="36dp"
+                        android:text="有限卡:"
+                        android:textColor="#3B3B3B"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/limitedNumberOfCards"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#1591FA"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llunlimitedNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="36dp"
+                        android:text="无限卡:"
+                        android:textColor="#3B3B3B"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/unlimitedNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#1591FA"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_money"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="36dp"
+                        android:text="储值金额:"
+                        android:textColor="#3B3B3B"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥0.00"
+                        android:textColor="#1591FA"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="会员提醒"
+                    android:textColor="#0D0D0D"
+                    android:textSize="15sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/divide_line"/>
+
+                <LinearLayout
+                    android:id="@+id/llMoneyNotEnough"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="22dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="22dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="余额不足"
+                        android:textColor="#0D0D0D"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="(卡内低于￥100)"
+                        android:textColor="#868585"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvMoneyNotEnough"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="12dp"
+                        android:drawableRight="@drawable/icon_arrow_r"
+                        android:text="0"
+                        android:textColor="@color/text_bg99"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divide_line"/>
+
+                <LinearLayout
+                    android:id="@+id/llCountNotEnough"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="22dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="22dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="余次不足"
+                        android:textColor="#0D0D0D"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="(卡内项目次数少于2)"
+                        android:textColor="#868585"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvCountNotEnough"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="12dp"
+                        android:drawableRight="@drawable/icon_arrow_r"
+                        android:text="0"
+                        android:textColor="@color/text_bg99"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divide_line"/>
+
+                <LinearLayout
+                    android:id="@+id/llBeOverdue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="22dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="22dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="即将过期"
+                        android:textColor="#0D0D0D"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="(卡内项目30天(含)内过期)"
+                        android:textColor="#868585"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tvBeOverdue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="12dp"
+                        android:drawableRight="@drawable/icon_arrow_r"
+                        android:text="0"
+                        android:textColor="@color/text_bg99"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divide_line"/>
+
+                <LinearLayout
+                    android:id="@+id/llOverdue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="22dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="22dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="已过期"
+                        android:textColor="#0D0D0D"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tvOverdue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="12dp"
+                        android:drawableRight="@drawable/icon_arrow_r"
+                        android:text="0"
+                        android:textColor="@color/text_bg99"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divide_line"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55808080"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

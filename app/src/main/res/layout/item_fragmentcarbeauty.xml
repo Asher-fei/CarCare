@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#F0F0F0"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_number"
+                android:gravity="center_vertical"
+                android:paddingLeft="17dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCarNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="粤AOPL17飞驰"
+                        android:textColor="#1F2020"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="舒先生(13987900989)"
+                        android:textColor="#6D6D6D"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#1F2020"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/icon_arrow_r"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvServiceItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:drawableLeft="@drawable/icon_serviceitem"
+            android:drawablePadding="19dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="服务项目：洗车，检车"
+            android:textColor="#6D6D6D"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvServer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_personal_small"
+                android:drawablePadding="19dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="李声淳"
+                android:textColor="#6D6D6D"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="2017-03-14 21:46"
+                android:textColor="#6D6D6D"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="￥30"
+            android:textColor="#FF5400"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_darkgray_1stroke"
+                android:text="取消订单"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btnChange"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/bg_darkgray_1stroke"
+                android:text="修改"
+                android:textSize="15sp"/>
+
+            <Button
+            android:id="@+id/btnDispatching"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/bg_darkgray_1stroke"
+            android:text="去派工"
+            android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btnSettleMent"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/bg_1stroke_orange"
+                android:text="结算"
+                android:textColor="#FF5400"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/btnGetCar"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/bg_1stroke_orange"
+                android:text="提车"
+                android:textColor="#FF5400"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

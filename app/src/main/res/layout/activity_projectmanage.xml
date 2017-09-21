@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <com.midian.base.widget.BaseLibTopbarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.midian.base.widget.BaseLibTopbarView>
+    <TextView
+        android:id="@+id/tvSearch"
+        android:hint="请输入项目"
+        android:textSize="13sp"
+        android:background="@drawable/bg_gray_1stroke"
+        android:paddingLeft="12dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/icon_search"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:layout_height="38dp" />
+    <com.midian.base.widget.pulltorefresh.PullToRefreshListView
+        android:id="@+id/pullToRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.midian.base.widget.pulltorefresh.PullToRefreshListView>
+</LinearLayout>

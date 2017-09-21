@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_spinner"
+    android:gravity="center"
+    android:padding="1dp">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvEdit"
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:text="编辑"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="#494949"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divide_line"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvDel"
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:text="删除"
+        android:textSize="14sp"
+        android:textColor="#494949"/>
+</LinearLayout>
